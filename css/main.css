@@ -70,6 +70,20 @@ div.nav-wrapper ul li {
     font-weight: 500;
 }
 
+/* Sidenav */
+#mobile-sidenav {
+    width: 200px;
+    top: 57px;
+}
+
+#mobile-sidenav li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#mobile-sidenav li a {
+    color: var(--head-text);
+}
+
 /* Header End Area */
 
 /* Banner Start Here */
@@ -473,14 +487,14 @@ h3.follow--us {
 
     /* Services Counter */
     .counter--outer {
-        left: 80px;
+        left: 70px;
         top: 20px;
     }
    
     /* Form Enquiry */
     .card {
         top: 25px;
-        right: 60px;
+        right: 40px;
     }
 
 }
@@ -489,6 +503,12 @@ h3.follow--us {
 
 /* For Large screen */
 @media(max-width: 992px) {
+
+    /* Menu icon */
+    .nav-wrapper a i {
+        margin-left: -40px;
+        font-size: 2.3rem;
+    }
 
     /* About Img and Text */
     .about--main--img img {
@@ -506,6 +526,10 @@ h3.follow--us {
        height: 345px;
    }
 
+   .service--item img {
+       opacity: 1;
+   }
+
    /* Services Counter */
    .counter--outer {
        left: 120px;
@@ -515,7 +539,8 @@ h3.follow--us {
    /* Form Enquiry */
    .card {
        top: 25px;
-       right: 100px;
+       right: 60px;
    }
 
 }
+
