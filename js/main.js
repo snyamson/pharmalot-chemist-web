@@ -1,11 +1,13 @@
-
 //  SIDENAV TRIGGER
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+$(document).ready(function () {
+  $(".sidenav").sidenav();
+});
 
 // CAROUSEL TRIGGER
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
+$(".carousel.carousel-slider").carousel({
+  fullWidth: true,
+  indicators: true,
+});
+
+// AOS
+AOS.init();
