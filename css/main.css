@@ -95,6 +95,10 @@ div.nav-wrapper ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#mobile-sidenav li:last-child {
+    border-bottom: none;
+}
+
 #mobile-sidenav li a {
   color: var(--head-text);
 }
@@ -129,7 +133,7 @@ a.button:hover .moreBtn {
 /* ==== END ==== */
 
 .banner {
-  height: 550px;
+  height: 34.375rem;
 }
 
 #carousel-container {
@@ -457,6 +461,12 @@ h3.follow--us {
 
 /* For Mobile */
 @media (max-width: 600px) {
+
+    /* Banner area */
+    .banner {
+        height: 28rem;
+      }
+
   /* About Img and Text */
   .about--main--img img {
     width: 100%;
@@ -488,6 +498,22 @@ h3.follow--us {
 
 /* For Tablet */
 @media (max-width: 768px) {
+
+     /* Banner area */
+     .banner {
+        height: 30rem;
+      }
+
+    /* Carousel Text */
+.carousel--text {
+    bottom: 35%;
+  }
+  
+  /* Carousel buttom */
+  .carousel-fixed-item a {
+    bottom: 15px;
+  }
+  
   /* About Img and Text */
   .about--main--img img {
     width: 100%;
@@ -519,6 +545,7 @@ h3.follow--us {
 
 /* For Large screen */
 @media (max-width: 992px) {
+
   /* Menu icon */
   .nav-wrapper a i {
     margin-left: -40px;
