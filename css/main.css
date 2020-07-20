@@ -23,7 +23,7 @@
   );
   --shop--btn--color: #4e97fd;
   --shop--btn--hover: #e4573d;
-  --mart--container--color: #333333
+  --mart--container--color: #333333;
 }
 
 body {
@@ -99,7 +99,7 @@ div.nav-wrapper ul li {
 }
 
 #mobile-sidenav li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 #mobile-sidenav li a {
@@ -342,25 +342,33 @@ h3.phram--para--text {
 /* ====== MART ====== */
 
 /* ====== COLORS ====== */
-#mart--container, .product--title, h3.view--products a {
+#mart--container,
+.product--title,
+h3.view--products a {
   color: var(--mart--container--color);
 }
 
-.product--container:hover a.shopNow, a.active:hover {
+.product--container:hover a.shopNow,
+a.active:hover, span.onsale {
   background: var(--shop--btn--hover);
-} 
+}
 
 .left--hero--product .item--price,
 .view--products i,
-.view--products a:hover, .product--title:hover {
+.view--products a:hover,
+.product--title:hover {
   color: var(--shop--btn--color);
 }
 
-.right--hero--product .item--price, p.price  {
+.right--hero--product .item--price,
+p.price {
   color: var(--shop--btn--hover);
 }
 
-a.active, .buy--btn:hover, a.shopNow, .material-tooltip {
+a.active,
+.buy--btn:hover,
+a.shopNow,
+.material-tooltip {
   background: var(--shop--btn--color);
 }
 
@@ -368,8 +376,16 @@ a.active, .buy--btn:hover, a.shopNow, .material-tooltip {
   background-color: #ffc400;
 }
 
+span.hot {
+  background: #f6b500;
+}
+
 .buy--btn {
   background: var(--mart--container--color);
+}
+
+.buy--info .buy--btn, span.onsale, span.hot {
+  color: var(--main-color);
 }
 /* ==== END ==== */
 
@@ -377,6 +393,7 @@ a.active, .buy--btn:hover, a.shopNow, .material-tooltip {
   border-color: var(--head-text);
   border-radius: 8px;
   padding: 8px;
+  margin: 0 10px 30px 0;
 }
 
 legend {
@@ -386,16 +403,18 @@ legend {
 }
 
 /* Hero-Items */
-div.hero--items, .product--container img {
-    height: 23.75rem;
+div.hero--items,
+.product--container img {
+  height: 23.75rem;
 }
 
 /* Hero-Item  */
 
-.product--container, .product--info {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
+.product--container,
+.product--info {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
 }
 
 .row div.overall--product--container {
@@ -406,12 +425,13 @@ div.hero--items, .product--container img {
   border-radius: 10px;
 }
 
-.product--container img, .product--info img{
-    max-width: 100%;
-    transition: all 0.5s;
-    display: block;
-    width: 100%;
-    transform: scale(1);
+.product--container img,
+.product--info img {
+  max-width: 100%;
+  transition: all 0.5s;
+  display: block;
+  width: 100%;
+  transform: scale(1);
 }
 
 .product--container img {
@@ -420,7 +440,7 @@ div.hero--items, .product--container img {
 
 .product--container:hover img,
 .product--info:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Products Description */
@@ -449,9 +469,8 @@ div.product--desc .desc--item--name {
   font-weight: 600;
 }
 
-
 /* Left Hero Product */
-div.left--hero--product .desc--category{
+div.left--hero--product .desc--category {
   margin: 0;
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -461,14 +480,12 @@ div.left--hero--product .desc--item--name {
   margin-top: 3px;
 }
 
-
-
 /* Right Hero Product */
 div.right--hero--product .desc--item--name {
   margin-top: 8px;
 }
 
-div.right--hero--product .desc--item--name span{
+div.right--hero--product .desc--item--name span {
   display: inline-block;
   margin-bottom: 7px;
 }
@@ -478,15 +495,12 @@ div.right--hero--product .desc--item--name span{
   font-size: 0.94rem;
 }
 
-
-
 /* Shop Now Buttom */
 a.shopNow {
   text-transform: none;
   border-radius: 20px;
   margin-top: 1.75rem;
   font-size: 14px;
-  
 }
 .item--tag {
   height: 100px;
@@ -509,7 +523,8 @@ a.shopNow {
 }
 
 /* Best Selling */
-.best--selling, .view--products {
+.best--selling,
+.view--products {
   font-weight: 550;
 }
 
@@ -529,7 +544,6 @@ h3.view--products {
   justify-content: flex-end;
 }
 
-
 /* Product Items Container */
 
 /* Product Info */
@@ -543,13 +557,29 @@ h3.view--products {
 }
 
 .product--info:hover .buy--info,
-a.active, .buy--btn:hover {
+a.active,
+.buy--btn:hover {
   transition: all 0.3s;
 }
 
 .product--info:hover .buy--info {
   display: block;
 }
+
+/* Product Badges */
+.product--badges {
+  position: absolute;
+  top: 0;
+  letter-spacing: 1.5px;
+}
+
+span.onsale , span.hot{
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  font-weight: 550;
+  padding: 3px 5px;
+}
+
 
 /* Buy Info */
 .buy--info {
@@ -566,12 +596,11 @@ a.active, .buy--btn:hover {
   width: 48px;
   margin-right: 10px;
   border-radius: 100%;
-  color: var(--main-color);
 }
 
-
 /* Product Category */
-.product--category, p.price {
+.product--category,
+p.price, .product--badges {
   text-transform: uppercase;
 }
 
@@ -585,35 +614,29 @@ a.active, .buy--btn:hover {
   letter-spacing: 1px;
 }
 
-.product--title, .price, .product--category, .buy--info {
+.product--title,
+.price,
+.product--category,
+.buy--info {
   padding: 0 5px;
 }
 
-.product--title{
+.product--title {
   font-size: 15px;
 }
-.product--title:hover {
-  color: var(--shop--btn--color);
-}
+
 .price {
   font-size: 18px;
 }
 
-.product--title {
-  color: var(--mart--container--color);
-}
-
 p.price {
   margin: 0;
-  color: var(--shop--btn--hover);
   font-weight: bold;
 }
 
 .material-tooltip {
-  background: var(--shop--btn--color);
   border-radius: 5px;
 }
-
 
 /* ===== MART END ===== */
 
@@ -742,11 +765,10 @@ h3.follow--us {
 
 /* For Mobile */
 @media (max-width: 600px) {
-
-    /* Banner area */
-    .banner {
-        height: 28rem;
-      }
+  /* Banner area */
+  .banner {
+    height: 28rem;
+  }
 
   /* About Img and Text */
   .about--main--img img {
@@ -775,26 +797,36 @@ h3.follow--us {
     top: 25px;
     right: 60px;
   }
+
+  /* Product Item Container */
+  /* Product Info */
+  .product--info {
+    height: 19rem;
+  }
+
+  .item--tag {
+    right: 15px;
+    bottom: 20px;
+  }
 }
 
 /* For Tablet */
 @media (max-width: 768px) {
+  /* Banner area */
+  .banner {
+    height: 30rem;
+  }
 
-     /* Banner area */
-     .banner {
-        height: 30rem;
-      }
-
-    /* Carousel Text */
-.carousel--text {
+  /* Carousel Text */
+  .carousel--text {
     bottom: 35%;
   }
-  
+
   /* Carousel buttom */
   .carousel-fixed-item a {
     bottom: 15px;
   }
-  
+
   /* About Img and Text */
   .about--main--img img {
     width: 100%;
@@ -826,7 +858,6 @@ h3.follow--us {
 
 /* For Large screen */
 @media (max-width: 992px) {
-
   /* Menu icon */
   .nav-wrapper a i {
     margin-left: -40px;
