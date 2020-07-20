@@ -801,12 +801,12 @@ h3.follow--us {
   /* Product Item Container */
   /* Product Info */
   .product--info {
-    height: 19rem;
+    height: 20rem;
   }
 
   .item--tag {
     right: 15px;
-    bottom: 20px;
+    bottom: -80px;
   }
 }
 
