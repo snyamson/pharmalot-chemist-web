@@ -36,3 +36,7 @@ $(".carousel.carousel-slider").hover(
     autoplay = true;
   }
 );
+
+$(document).ready(function(){
+  $('.tooltipped').tooltip();
+});
