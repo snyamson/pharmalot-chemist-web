@@ -76,12 +76,24 @@ div.nav-wrapper .brand-logo,
 }
 
 /* Navbar */
+/* ====== COLORS ====== */
+div.nav-wrapper ul li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+div.nav-wrapper ul li a.active--nav--link,
+div.nav-wrapper ul li a:hover,
+#mobile-sidenav li a {
+  color: var(--head-text);
+}
+/* ==== END ==== */
+
 div.nav-wrapper {
   padding: 0 30px;
 }
 
-div.nav-wrapper ul li a {
-  color: rgba(0, 0, 0, 0.5);
+div.nav-wrapper ul li a:hover {
+  background: transparent;
 }
 
 div.nav-wrapper ul li {
@@ -100,10 +112,6 @@ div.nav-wrapper ul li {
 
 #mobile-sidenav li:last-child {
   border-bottom: none;
-}
-
-#mobile-sidenav li a {
-  color: var(--head-text);
 }
 
 /* Header End Area */
@@ -665,6 +673,10 @@ iframe {
   color: var(--logo-brand-color);
 }
 
+.follow--us--handles .follow-us-icons {
+  color: var(--main-color);
+}
+
 /* ==== END ==== */
 .card {
   height: 330px;
@@ -758,7 +770,6 @@ h3.follow--us {
 
 .follow--us--handles .follow-us-icons {
   background: transparent;
-  color: var(--main-color);
 }
 
 /* ======= Media Queries ======= */
