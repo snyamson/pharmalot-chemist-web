@@ -30,12 +30,10 @@
       rel="stylesheet"
     />
     <!-- CSS -->
-    <script
-      src="https://kit.fontawesome.com/82af18957e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.17/default/snipcart.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -313,7 +311,21 @@
                   <p class="desc--category">Home medical supplies</p>
                   <h4 class="desc--item--name"><span>Digital</span><br>Thermometer</h4>
                   <h4 class="item--price">GHS 324 - GHS 347</h4>
-                  <a class="shopNow btn">Shop now</a>
+                  <!-- <a class="shopNow btn snipcart-add-item"
+                  data-item-id="1"
+                  data-item-price="324"
+                  data-item-url="/">
+                    Shop now
+                  </a> -->
+                  <a class="shopNow btn snipcart-add-item"
+  data-item-id="1"
+  data-item-price="79.99"
+  data-item-url="/"
+  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+  data-item-image="img/products/themometer-gun.jpg"
+  data-item-name="Thermometer Gun">
+  Shop now
+                </a>
                 </div>
               </div>
           </div>
@@ -535,12 +547,22 @@
       </div>
     </footer>
 
+    <div class="fixed-action-btn snipcart-checkout">
+      <a class="btn-floating btn-large red">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <span class="snipcart-items-count"></span>
+      
+    </div>
+
     <!-- JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <div hidden id="snipcart" data-api-key="ZDA2OGJmOWUtY2Q4ZC00YmVmLTkwOWYtOGNlYzZhOTBmOTMwNjM3MzA5MTc1MzUzNTgyOTk4" data-config-add-product-behavior="none" data-currency="GHS"></div>
+<script src="https://cdn.snipcart.com/themes/v3.0.17/default/snipcart.js"></script>
     <script src="js/materialize.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
