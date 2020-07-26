@@ -27,3 +27,30 @@ $(document).ready(function(){
 
 // AOS
 AOS.init();
+
+
+// COLLAPSIBLE
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
+
+var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});
+
+// DROPDOWN
+$('.dropdown-trigger').dropdown({
+ 
+  hover: true, 
+  coverTrigger: false,
+  constrainWidth:false,
+  alignment:"middle"
+ 
+}
+);
+
+// TABS
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
