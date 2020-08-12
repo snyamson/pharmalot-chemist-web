@@ -570,6 +570,7 @@ h3.view--products {
 .product--info {
   /* height: 18.75rem; */
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
 }
 
 .product--info img {
@@ -1136,23 +1137,22 @@ span.lifebuoy--soap {
 }
 
 
-/* View all Products banner */
+/* Other Products banner */
 
-.pha--view--all--prod {
+.other--prod {
   background: linear-gradient(
       0deg,
       rgba(67, 134, 222, 0.6),
       rgba(67, 134, 222, 0.9)
     ),
     url("../img/pharmacy/view--all--products.jpg") center center / cover no-repeat;
-  height: 350px;
+  height: 300px;
   padding: 0 30px;
   margin-top: 420px;
   position: relative;
 }
 
 .prod--alert,
-.pha--all--btn,
 .prod--alert .prod--alert--hover,
 .prod--alert .alert--price {
   position: absolute;
@@ -1179,11 +1179,12 @@ span.lifebuoy--soap {
   margin-left: 30px;
 }
 
-.pha--all--btn {
-  bottom: 25%;
+.other--prod--text {
+  position: absolute;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50% ,-50%);
-
+  transform: translate(-50%, -50%);
+  color: var(--main-color);
 }
 
 
@@ -1270,6 +1271,49 @@ li.indicator {
   margin: 0 auto 5px;
 }
 
+
+/* NEW PRODUCT TAB */
+/* New Product 1 */
+
+#new--products {
+  padding: 0 50px;
+}
+
+.lat--product--info {
+  display: flex;
+  height: 160px;
+  width: 95%;
+}
+
+.lat--product--image {
+  width: 45%;
+}
+
+.lat--product--desc {
+  padding: 30px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.lat--product--name {
+  font: 17px monospace;
+  margin-bottom: 5px;
+  color: #003242;
+}
+
+.lat--product--price {
+  font-size: 16px;
+}
+
+.lat--product--name,
+.lat--product--price {
+  font-weight: bold;
+}
+
+
+
+
 /* ======= Media Queries ======= */
 
 /* For Mobile */
@@ -1341,6 +1385,15 @@ li.indicator {
   margin: 0 auto 7px;
 }
 
+/* Other Products banner */
+.prod--alert img:first-child {
+  margin-left: 0;
+}
+
+.prod--alert .prod--alert--hover {
+  left: 2.5%;
+  
+}
 
 }
 
@@ -1406,6 +1459,22 @@ li.indicator {
   /* High Demand Products */
 .high--demand--prod--container {
   margin: 10px 20px;
+}
+
+/* Other Products banner */
+/* .prod--alert img:first-child {
+  margin-left: 30px;
+}
+
+.prod--alert .prod--alert--hover {
+  left: 11%;
+  
+} */
+
+.other--prod--text {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
 }
 
 }
